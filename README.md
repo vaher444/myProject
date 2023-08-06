@@ -9,3 +9,6 @@ styled as per vintage theme.
 HTML - For consructing basic user interface of stopwatch
 CSS - For styling HTML elements
 Javascript - For functioning stopwatch sing start, stop and reset buttons
+
+# Responsiveness 
+Stopwatch program is completly responsive from mobile to large resolution devices (min resolution is 320px).
