@@ -15,55 +15,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Bootstrap Nav -->
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark">
-        <div class="container-fluid container-xxl bd-gutter flex-wrap flex-lg-nowrap" >
-            <a class="navbar-brand" href="../">SuperHero Hunter</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../">Home</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html#character-head">Heros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html#comic-head">Comics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Favorites</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="featured text-light">
-        <div class= "container mt-5 mb-4 p-4 list-container" >
-            <div>
-                <h3 id="character-head">Favourite Heros</h3>
-            </div>
-            <hr>
-            <br>
-            <div class="row">
-                <div class = "mycontainer" id = "character-container">
-                    <div id = "char-empty"></div>
+    <div class="content-wrapper">
+         <!-- Bootstrap Nav -->
+         <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark">
+            <div class="container-fluid container-xxl bd-gutter flex-wrap flex-lg-nowrap" >
+                <a class="navbar-brand" href="../">SuperHero Mania</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html#character-head">Heros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#comic-head">Comics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Favorites</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="comic-head">
-                <h3>Favourite Comics</h3>
-            </div>
-            <hr>
-            <div class="row">
-                <div class = "mycontainer" id = "comic-container">
-                    <div id = "comic-empty"></div>
+        </nav>
+        <section class="featured text-light">
+            <div class= "container mt-5 mb-4 p-4 list-container favourite-page" >
+                <div>
+                    <h3 id="character-head">Favourite Heros</h3>
+                </div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class = "mycontainer" id = "character-container">
+                        <div id = "char-empty"></div>
+                    </div>
+                </div>
+                <div id="comic-head">
+                    <h3>Favourite Comics</h3>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class = "mycontainer" id = "comic-container">
+                        <div id = "comic-empty"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- scripts -->
+        </section>
+        <!-- scripts -->
+    </div>
     <script src="../js/secret.js"></script>
     <script src="../js/marvelAPI.js"></script>
     <script src="../js/favourite.js"></script>

@@ -69,11 +69,11 @@ const toggleFav = (type,id)=>{
             let type = event.target.parentElement.id.split('-');
             toggleFav(type[0],type[1]);
         }
-        else if(event.target.className=='character-card'){
+        else if(event.target.classList.contains('character-card')){
             let type = event.target.id.split('-');
             redirect(type);
         }
-        else if(event.target.parentElement.className=='character-card'){
+        else if(event.target.parentElement.classList.contains('character-card')){
             let type = event.target.parentElement.id.split('-');
             redirect(type);
         }

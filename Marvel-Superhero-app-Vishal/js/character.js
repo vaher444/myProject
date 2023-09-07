@@ -47,7 +47,7 @@ const toggle = (id) =>{
 const displayCharacter = (character)=>{
     title.innerHTML = character.name;
     let description = `
-                    <div class="character-desc-card mb-5 card bg-dark border border-secondary text-light">
+                    <div class="col-12 character-desc-card mb-5 card bg-dark border border-secondary text-light">
                         <img src="${character.thumbnail.path}.${character.thumbnail.extension}">
                         <div class="mt-3">                    
                             <h3> ${character.name} </h3>

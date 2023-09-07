@@ -20,7 +20,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(238, 238, 238, 30%);
+    background-color: rgba(51, 51, 51, 50%);
     display: inline-block;
 }
 
@@ -38,6 +38,10 @@ body {
     align-items: flex-end;
     padding-bottom: 3rem;
     display: flex;
+}
+
+#character-head {
+    padding-top: 100px;
 }
 
 .mycontainer {
@@ -61,7 +65,9 @@ body {
     min-width:100px;
     margin: 0 auto;
     margin-bottom: 1rem;
-    border-radius: 5px;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    transition: all .5s;
 }
 .character-card:hover img {
     box-shadow: 0px 0px 50px 2px rgb(0, 0, 0);
@@ -115,19 +121,24 @@ body {
 }
 
 .list-container {
-    background-color: rgba(29, 28, 28, 0.9);
     border-radius: .5rem;
+}
+
+.favourite-page {
+    z-index: 2;
+    position: relative;
 }
 
 /* Favourite  btn style */
 .favourite-btn {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: rgb(249, 252, 20);
-    padding: 2px 10px;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: red;
+    padding: 3px 7px;
     align-self: flex-end;
-    border-radius: 5px;
+    border-radius: 100%;
 }
 
 .favourite-btn:hover {
@@ -136,20 +147,20 @@ body {
 
 /* Single character and single comic style */
 .character-desc-card {
-    background-color: rgb(12, 12, 12);
     padding: 2rem;
     border-radius: .5rem;
     position: relative;
     display: flex;
 }
 .character-desc-card img {
+    width: 100%;
     min-width: 200px;
-    margin-right: 2rem;
     max-width: 300px;
 }
 .char-desc-fav {
     bottom: 2rem;
     right: 2rem;
+    flex-shrink: 0;
 }
 .char-fav-btn {
     background-color: red;

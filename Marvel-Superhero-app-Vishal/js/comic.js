@@ -47,10 +47,10 @@ const displayComic = (comic)=>{
     console.log(comic)
     title.innerHTML = comic.title;
     let description = `
-                    <div class="character-desc-card d-flex mb-5">
+                    <div class="col-12 character-desc-card mb-5 card bg-dark border border-secondary text-light"">
                         <img src="${comic.thumbnail.path}.${comic.thumbnail.extension}">
                         <div>                    
-                            <h3> ${comic.title} </h3>
+                            <h3 class="mt-3"> ${comic.title} </h3>
                             <p>${comic.description}</p>
                         </div>
                         <div class="char-desc-fav">
@@ -64,7 +64,7 @@ const displayComic = (comic)=>{
 //display character fetched from api
 const displayCharacter = (character)=>{
     let characterComic = `
-            <div class = "character-card" id = "character-${character.id}">
+            <div class = "col-12 col-md-3 col-xl-2 character-card card mx-md-3 bg-dark border border-secondary" id = "character-${character.id}">
                 <img src="${character.thumbnail.path}.${character.thumbnail.extension}">
                 <p class = "card-name">${character.name}</p>
                 <div id = "favChar-${character.id}" class="favourite-btn">
